@@ -1,3 +1,4 @@
+# submit: Did not solve the environment. Best 100-episode average reward was 188.96 +- 2.62. (CartPole-v0 is considered "solved" when the agent obtains an average reward of at least 195.0 over 100 consecutive episodes.)
 import tensorflow as tf
 import numpy as np
 import random
@@ -102,7 +103,7 @@ def run_episode(env, policy_grad, value_grad, sess):
 
 
 env = gym.make('CartPole-v0')
-env.monitor.start('cartpole-hill/', force=True)
+env.monitor.start('cartpole-experiments/', force=True)
 policy_grad = policy_gradient()
 value_grad = value_gradient()
 sess = tf.InteractiveSession()
