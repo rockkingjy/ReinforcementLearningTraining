@@ -1,3 +1,8 @@
+- action: -1,+1; 
+- reward: +1 if upright;
+- observation:an array of 4 numbers; 
+- The episode ends(done==True) when the pole is more than 15 degrees from vertical, or the cart moves more than 2.4 units from the center.
+- Our destination: try to get the best parameters;
 
 # Random search, hill climbing, policy gradient for CartPole
 
